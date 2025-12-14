@@ -388,6 +388,31 @@ spring.jpa.hibernate.ddl-auto=update
 - `.gitignore` file included
 - `README.md` clearly describes application behavior
 - Project is ready for live presentation and testing
+  
+---
+
+## 🖼️ Screenshots
+
+![Swagger home page](screenshots/Swagger1.png)
+![Swagger POST](screenshots/Swagger2Post.png) 
+![Swagger POST outcome](screenshots/Swagger3Post.png) 
+![Swagger GET by Id](screenshots/Swagger4Get.png) 
+![Swagger GET All](screenshots/Swagger4GetALL.png) 
+![Swagger Put Before Update](screenshots/Swagger6PutBeforeUpdate.png) 
+![Swagger Put Before Update 2](screenshots/Swagger6PutBeforeUpdate2.png) 
+![Swagger Get After Update 2](screenshots/Swagger7GetAfterUpdate.png) 
+![Swagger Delete](screenshots/Swagger8Delete.png) 
+![Swagger Get after delete](screenshots/Swagger9GetAfterDelete.png) 
+
+![H2 Console](screenshots/H2Console1.png) 
+![H2 Console](screenshots/H2Console1.png) 
+![H2 Console and Swagger Adding ID 2](screenshots/H2Console2AddingID2.png) 
+![H2 Console Table](screenshots/H2Console2AddingID2TABLE.png)
+![H2 Console and Swagger Updating Data with PUT](screenshots/H2Console3UpdatingData.png) 
+![H2 Console Table After PUT](screenshots/H2Console3UpdatingData2.png) 
+![H2 Console and Swagger Deleting Data with Delete](screenshots/H2Console3DeletingData.png)
+![H2 Console Table After DELETE](screenshots/H2Console3DeletingData2.png)
+![Swagger GET deleted Data](screenshots/H2Console3GetDeletedData.png)
 
 ---
 
