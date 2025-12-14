@@ -470,6 +470,18 @@ spring.jpa.hibernate.ddl-auto=update
 
 ---
 
+## 🏁 Conclusion
+
+This project successfully demonstrates the implementation of a fully functional RESTful API using **Spring Boot 3** and **Java 21**. By integrating key technologies such as **Spring Data JPA**, **H2 Database**, and **OpenAPI (Swagger)**, the application ensures efficient data management, automated documentation, and easy testing.
+
+**Key Achievements:**
+* **Robust Architecture:** Implemented a clean separation of concerns using Controller, Service, and Repository layers.
+* **Data Integrity:** Utilized an in-memory H2 database for rapid development and testing cycles.
+* **User-Friendly Documentation:** Integrated Swagger UI to allow real-time API interaction without needing external tools like Postman.
+* **Error Resilience:** Established global exception handling to provide meaningful error messages to API consumers.
+
+---
+
 **Student:**  Feryel Tesnim Kermiche - Student ID Number: 74450 
 **University:** Akademia Finansów i Biznesu Vistula  
 **Course:** Spring Framework Apps
