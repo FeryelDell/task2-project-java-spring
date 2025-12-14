@@ -393,26 +393,80 @@ spring.jpa.hibernate.ddl-auto=update
 
 ## 🖼️ Screenshots
 
-![Swagger home page](screenshots/Swagger1.png)
-![Swagger POST](screenshots/Swagger2Post.png) 
-![Swagger POST outcome](screenshots/Swagger3Post.png) 
-![Swagger GET by Id](screenshots/Swagger4Get.png) 
-![Swagger GET All](screenshots/Swagger4GetALL.png) 
-![Swagger Put Before Update](screenshots/Swagger6PutBeforeUpdate.png) 
-![Swagger Put Before Update 2](screenshots/Swagger6PutBeforeUpdate2.png) 
-![Swagger Get After Update 2](screenshots/Swagger7GetAfterUpdate.png) 
-![Swagger Delete](screenshots/Swagger8Delete.png) 
-![Swagger Get after delete](screenshots/Swagger9GetAfterDelete.png) 
+### 1. API Interaction via Swagger UI
 
-![H2 Console](screenshots/H2Console1.png) 
-![H2 Console](screenshots/H2Console1.png) 
-![H2 Console and Swagger Adding ID 2](screenshots/H2Console2AddingID2.png) 
-![H2 Console Table](screenshots/H2Console2AddingID2TABLE.png)
-![H2 Console and Swagger Updating Data with PUT](screenshots/H2Console3UpdatingData.png) 
-![H2 Console Table After PUT](screenshots/H2Console3UpdatingData2.png) 
-![H2 Console and Swagger Deleting Data with Delete](screenshots/H2Console3DeletingData.png)
-![H2 Console Table After DELETE](screenshots/H2Console3DeletingData2.png)
-![Swagger GET deleted Data](screenshots/H2Console3GetDeletedData.png)
+**Swagger UI Home Page**
+*The main dashboard showing all available endpoints for the Product Controller.*
+![Swagger Home Page](screenshots/Swagger1.png)
+
+**Creating a Product (POST)**
+*Sending a JSON request to create a new product.*
+![Sending POST Request](screenshots/Swagger2Post.png)
+
+**Creation Success Response**
+*The server responds with 201 Created and returns the new object with an ID.*
+![POST Response Outcome](screenshots/Swagger3Post.png)
+
+**Retrieving All Products (GET)**
+*Fetching the list of all available products.*
+![GET All Products](screenshots/Swagger5GetALL.png)
+
+**Retrieving by ID (GET)**
+*Fetching a single specific product to verify details.*
+![GET Product by ID](screenshots/Swagger4Get.png)
+
+**Updating a Product (PUT) - Initial State**
+*Checking the product state before applying changes.*
+![Before Update](screenshots/Swagger6PutBeforeUpdate.png)
+![Before Update Details](screenshots/Swagger6PutBeforeUpdate2.png)
+
+**Verifying Update**
+*Fetching the product again to confirm the price/name changes were saved.*
+![GET After Update](screenshots/Swagger7GetAfterUpdate.png)
+
+**Deleting a Product (DELETE)**
+*Removing a product by its ID.*
+![Delete Request](screenshots/Swagger8Delete.png)
+
+**Verifying Deletion**
+*Attempting to fetch the deleted ID returns a 404 Not Found exception.*
+![404 Not Found](screenshots/Swagger9GetAfterDelete.png)
+
+---
+
+### 2. Database Validation via H2 Console
+
+**H2 Console Login**
+*Connecting to the in-memory database using the credentials from `application.properties`.*
+![H2 Login Screen](screenshots/H2Console1.png)
+
+**Database State: Adding Data**
+*Comparing the Swagger creation request with the database entry.*
+![Adding ID 2](screenshots/H2Console2AddingID2.png)
+
+**H2 Table View (After Create)**
+*The `PRODUCT` table now contains the newly created rows.*
+![H2 Table View](screenshots/H2Console2AddingID2TABLE.png)
+
+**Database State: Updating Data**
+*Executing a PUT request to modify existing data.*
+![Updating Data](screenshots/H2Console3UpdatingData.png)
+
+**H2 Table View (After Update)**
+*The table reflects the updated values (e.g., price change).*
+![H2 Table Updated](screenshots/H2Console3UpdatingData2.png)
+
+**Database State: Deleting Data**
+*Executing the DELETE operation.*
+![Deleting Data](screenshots/H2Console3DeletingData.png)
+
+**H2 Table View (After Delete)**
+*The row is successfully removed from the database table.*
+![H2 Table After Delete](screenshots/H2Console3DeletingData2.png)
+
+**Final Verification**
+*Confirming the data is completely gone.*
+![Deleted Data Verification](screenshots/H2Console3GetDeletedData.png)
 
 ---
 
